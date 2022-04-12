@@ -1,38 +1,93 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#root {
+  max-width: 900px;
+  margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.icon-box {
+  margin: 15px 0;
+  text-align: right;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.icon {
+  font-size: 30px;
+  cursor: pointer;
+  -moz-user-select: none;  
+  -webkit-user-select: none;  
+  -ms-user-select: none;  
+  -o-user-select: none;  
+  user-select: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.card-view {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+/* ShopCard */
+.shop-card {
+  width: 31%;
+  margin: 10px 0;
+  text-align: center;
+  /* background-color: rgb(235, 235, 235); */
+  /* padding: 10px; */
+}
+
+.shop-card-image {
+  width: 100%;
+  margin-top: 5px;
+}
+
+.shop-card-box{
+  margin: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+  color:red;
+}
+
+.shop-card-price {
+  font-size: 20px;
+}
+
+.shop-card-btn,
+.shop-item-btn {
+  border: 1px solid red;
+  color: red;
+  border-radius: 15px;
+  padding: 5px;
+  cursor: pointer;
+}
+/* ShopItem */
+.shop-item {
+  /* width: 100%; */
+  height: 60px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 3px;
 }
 
-.App-link {
-  color: #61dafb;
+.shop-item-image {
+  width: 60px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.shop-item-title {
+  flex-basis: 30%;
+}
+
+.shop-item-price {
+  color: red;
 }
